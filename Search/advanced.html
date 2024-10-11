@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="nav">
+             <a href="index.html">Google Search</a>
+            
+        </div>
+
+        <div class="advanced-search-container">
+        
+        <form action="https://www.google.com/search" method="GET">
+            <div>
+                <label>All these words:</label>
+                <input type="text" name="as_q" class="advanced-search-bar">
+            </div>
+
+            <div>
+                <label>This exact word or phrase:</label>
+                <input type="text" name="as_epq" class="advanced-search-bar">
+            </div>
+
+            <div>
+                <label>Any of these words:</label>
+                <input type="text" name="as_oq" class="advanced-search-bar">
+            </div>
+
+            <div>
+                <label>None of these words:</label>
+                <input type="text" name="as_eq" class="advanced-search-bar">
+            </div>
+
+        
+            <div class="buttons">
+                <button type="submit" class="search-btn">Google Advanced Search</button>
+                
+            </div>
+            
+        </form>
+        </div>
+    </body>
+</html>
