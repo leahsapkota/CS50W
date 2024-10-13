@@ -4,32 +4,93 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>Google Search</title>
+        <title>Google Advanced Search</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-       <header class="head"> 
-        <div class="nav">
-             <a href="image.html">Image Search</a>
-             <a href="advanced.html">Advanced Search</a>
+        <div class="advanced-header">
+            <div class="advanced-header-logo">    
+               <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">        
+            </div>
+        
+            <a href="index.html">Google Search</a>        
         </div>
-      </header>
-      
-    <div class="search-container">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
-        <form action="https://www.google.com/search"method="GET">
-
-            <div class="inputField">
-                <input type="text" name="q" class="search-bar">
-            </div>
-
-            <div class="buttons">
-                <input type="submit" value="Google Search"> 
-                <input type="submit" formaction="https://doodles.google/" value="I'm Feeling Lucky"> 
-            </div>
             
-        </form>
+                  
+        
+
+       
+        <div class="advanced-sub-header">
+            <h3>Advanced Search</h3>
         </div>
-    </body>
+        
+       
+        
+    <form action="https://www.google.com/search" method="GET">         
+         <div class="InputOne">
+            <div class="TextDesHeading">Find pages with...</div>
+            <div class="input-field">&nbsp;</div>
+            <div class="ToDoHeading">To do this in the search box.</div>
+         </div>
+
+         <div class="InputOne">
+            <div class="TextDes">All these words:</div>
+            <div class="input-field">
+                <input type="text" name="as_q">
+            </div>
+        
+
+         <div class="toDo">
+            Type the important words:<span>rat terrier</span>
+
+         </div>
+     </div>
+     <div class="InputOne">
+        <div class="TextDes">
+            this exact word or phrase:
+        </div>
+        <div class="input-field">
+            <input type="text" name="as_epq">
+        </div>
+
+        <div class="toDo">
+            Put exact words in quotes:<span>"rat terrier"</span>
+        </div>
+    </div>
+        <div class="InputOne">
+            <div class="TextDes">any of these words:</div>
+            <div class="input-field">
+                <input type="text" name="as_oq">
+            </div>
+        
+
+         <div class="toDo">
+            Type OR between all the words you want:
+            <span>miniature OR standard</span>
+         </div>
+</div>
+         <div class="InputOne">
+            <div class="TextDes">none of these words:</div>
+            <div class="input-field">
+                <input type="text" name="as_eq">
+            </div>
+        
+
+         <div class="toDo">
+            Put a minus sign just before words that you don't want:
+            <span>-rodent, -"Jack Russell"</span>
+         </div>
+     </div>
+
+     <div class="InputOne">
+        <div class="TextDes"></div>
+        <div class="buttons">
+            <input type="submit" value="Advanced Search" formaction="https://www.google.com/search">
+        </div>
+    </div>
+
+
+    </form>
+  </body>
 </html>
