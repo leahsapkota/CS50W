@@ -1,0 +1,23 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<div class="row mx-4" style="max-width: 50rem; margin: 0 auto;">
+    {% for listing in listings %}
+    <div class="card mb-3" style="width: 100%; border: 1px solid #dee2e6; border-radius: 0.5rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img class="card-img" src="{{ listing.imageUrl }}" alt="{{ listing.title }}" style="width: 100%; height: auto; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 1.25rem; margin-bottom: 0.5rem;">{{ listing.title }}</h5>
+                    <p class="card-text" style="color: #6c757d;">{{ listing.description }}</p>
+                    <a href="{% url 'listing' id=listing.id %}" class="btn btn-primary">Details!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+</div>
+{% endblock %}
