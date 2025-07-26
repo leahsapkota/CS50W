@@ -26,7 +26,7 @@ Requirements for this project:
 You’ll likely want to make a POST request to /emails, passing in values for recipients, subject, and body.
 Once the email has been sent, load the user’s sent mailbox.
 
-2.Mailbox: When a user visits their Inbox, Sent mailbox, or Archive, load the appropriate mailbox.
+2.Mailbox: Mailbox: When a user visits their Inbox, Sent mailbox, or Archive, load the appropriate mailbox.
 You’ll likely want to make a GET request to /emails/<mailbox> to request the emails for a particular mailbox.
 When a mailbox is visited, the application should first query the API for the latest emails in that mailbox.
 When a mailbox is visited, the name of the mailbox should appear at the top of the page (this part is done for you).
